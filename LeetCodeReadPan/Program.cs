@@ -1,4 +1,5 @@
-﻿using LeetCodeReadPan.Easy;
+﻿using System;
+using LeetCodeReadPan.Easy;
 
 namespace LeetCodeReadPan
 {
@@ -6,9 +7,11 @@ namespace LeetCodeReadPan
     {
         public static void Main(string[] args)
         {
-            reverse_integer r = new reverse_integer();
-
-            r.Reverse(-123);
+            palindrome_number palindromeNumber = new palindrome_number();
+            Console.WriteLine(palindromeNumber.IsPalindrome(-121));
+            
+            reverse_integer reverseInteger = new reverse_integer();
+            Console.WriteLine(reverseInteger.Reverse(-121) == -121);
         }
     }
 }
